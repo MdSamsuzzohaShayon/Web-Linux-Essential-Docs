@@ -20,9 +20,9 @@ Top payment gateways
 
 ## Payment page/form builder
 
- 1. [wufoo](https://www.wufoo.com/). ** Build and share online forms. ** Create forms, collect data and payments, and automate your workflows.
- 2. [simplypay.me](https://www.simplypay.me/). ** COLLECT PAYMENTS ONLINE. ** w/ Secure Payment Pages & Invoicing Links
- 3. [formstack](https://www.formstack.com/). ** Let’s revolutionize data collection. Together. ** It’s time to shake up the way you capture data and put it to work. Use Formstack to reduce process chaos and forge your way to better workplace productivity.
+ 1. [wufoo](https://www.wufoo.com/). **Build and share online forms.** Create forms, collect data and payments, and automate your workflows.
+ 2. [simplypay.me](https://www.simplypay.me/). **COLLECT PAYMENTS ONLINE.** w/ Secure Payment Pages & Invoicing Links
+ 3. [formstack](https://www.formstack.com/). **Let’s revolutionize data collection. Together.** It’s time to shake up the way you capture data and put it to work. Use Formstack to reduce process chaos and forge your way to better workplace productivity.
 
 ## What is a virtual terminal? 
 
