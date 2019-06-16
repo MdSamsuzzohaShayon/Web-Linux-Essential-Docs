@@ -2,21 +2,21 @@
 
 A merchant account is a type of bank account that allows businesses to accept payments by debit or credit cards. So a merchant account is an agreement between a retailer, a merchant bank and payment processor for the settlement of credit card and/or debit card transactions.
 
-![merchant account](/img/BlueSnapGatewayDiagram.jpg)
+![merchant account](img/BlueSnapGatewayDiagram.jpg)
 
-![merchant account](/img/pgateway_authprocess.gif)
+![merchant account](img/pgateway_authprocess.gif)
 
 ## Payment Gateway
 
 A payment gateway is a merchant service provided by an e-commerce application service provider that authorizes credit card or direct payments processing for e-businesses, online retailers, bricks and clicks, or traditional brick and mortar.
 
-![payment gateway](/img/payment.png)
+![payment gateway](img/payment.png)
 
 Top payment gateways
 
-![top payment gateway](/img/top.jpg)
+![top payment gateway](img/top.jpg)
 
-![top payment gateway](/img/international_online_payment_bd.jpg)
+![top payment gateway](img/international_online_payment_bd.jpg)
 
 ## Payment page/form builder
 
