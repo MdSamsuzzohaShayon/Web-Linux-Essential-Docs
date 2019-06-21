@@ -19,6 +19,8 @@
 
 ## Using cli tool
 
+ - [docs](https://www.netlify.com/docs/cli/#netlify-dev-beta)
  - installation netlify cli `npm install -g netlify-cli` 
  - deploying site `netlify deploy` -> Authorize
- - 
+ - site id is optional
+ - Path to deploy is where our main file is (we don't need to give anything if index.html is inside root folder)
