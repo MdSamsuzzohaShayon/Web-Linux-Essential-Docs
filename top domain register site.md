@@ -1,0 +1,11 @@
+[know more](https://hostingfacts.com/domain-registrars/)
+ - Domain.com
+ - GoDaddy.com
+ - Namecheap.com
+ - Bluehost.com
+ - HostGator.com
+ - Name.com
+ - 1&1
+ - Register.com
+ - InMotion Hosting
+ - Domains.Google
