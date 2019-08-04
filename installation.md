@@ -44,12 +44,22 @@ sudo apt install flatpak
 
 # Installation system
 
-### Extract files
+### Tarball file
 
+ 1. Extract
 ```
 tar xzf file.tar.gz
 tar xjf file.tar.bz2
 tar xzvf file.tar.gz
+```
+
+ 2. read README or Install file
+ 3. go to file directory and run the command
+
+```
+./configure
+make
+sudo make install
 ```
 
 ### .deb files
