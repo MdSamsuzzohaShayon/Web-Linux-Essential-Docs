@@ -51,6 +51,7 @@ sudo apt install flatpak
 tar xzf file.tar.gz
 tar xjf file.tar.bz2
 tar xzvf file.tar.gz
+xz -d file.txz
 ```
 
  2. read README or Install file
@@ -69,4 +70,12 @@ sudo apt install file_path
 sudo dpkg -i file_path
 ```
 
+### flatpak
 
+```
+flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+flatpak run org.gimp.GIMP//stable
+flatpak update
+```
+
+[Flatpak official installation guide](https://flatpak.org/setup/Ubuntu/)
