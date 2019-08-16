@@ -17,4 +17,4 @@ localhost:8080/gui
 
 ## Uninstall uTorrent
 
-sudo rm -r /opt/utorrent-server-alpha-v3_3 /usr/bin/utserver
+`sudo rm -r /opt/utorrent-server-alpha-v3_3 /usr/bin/utserver`
