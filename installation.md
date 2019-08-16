@@ -11,7 +11,9 @@ This will only install on C drive
 
  1. update 
 
-`sudo apt update && sudo apt upgrade -y`
+```
+sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade -y
+```
 
  2. install essential files for linux
 
