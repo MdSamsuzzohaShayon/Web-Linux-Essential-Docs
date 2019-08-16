@@ -1,0 +1,10 @@
+## Installing utorrent 
+
+```
+cd ~/Downloads/
+sudo tar -xvzf utserver.tar.gz -C /opt/
+sudo chmod -R 755 /opt/utorrent-server-alpha-v3_3/
+```
+natio
+
+## Start utorrent
