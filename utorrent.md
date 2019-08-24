@@ -18,3 +18,7 @@ localhost:8080/gui
 ## Uninstall uTorrent
 
 `sudo rm -r /opt/utorrent-server-alpha-v3_3 /usr/bin/utserver`
+
+
+[know more](https://askubuntu.com/questions/530955/how-to-install-utorrent-v3-3-on-14-04/530961)
+[more](http://ubuntuhandbook.org/index.php/2016/09/setup-%CE%BCtorrent-server-ubuntu-16-04/)
