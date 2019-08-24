@@ -41,3 +41,6 @@
  - For creating folder first we will create path for our website and there will be **username.github.io**
  - Write something in summery
  - Publish repository
+
+
+[*Frok a repo*](https://help.github.com/en/articles/fork-a-repo)
