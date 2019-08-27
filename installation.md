@@ -81,3 +81,16 @@ flatpak update
 ```
 
 [Flatpak official installation guide](https://flatpak.org/setup/Ubuntu/)
+
+
+
+### Installing custom folder color
+
+```
+sudo add-apt-repository ppa:costales/folder-color
+sudo apt-get update
+sudo apt-get install folder-color
+nautilus -q
+```
+
+now just right click on any folder and can find a color option
