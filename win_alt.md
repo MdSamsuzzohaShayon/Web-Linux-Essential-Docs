@@ -22,30 +22,30 @@
 
 ### 3D Design (Free and Open-Source)
 
- 1. Blender — Professional and FOSS alternative to 3D Studio / Maya (Available for Windows, Mac, and Linux).
- 2. FreeCad — FOSS alternative to AutoCad (Available for Windows, Mac, and Linux).
-Sweet Home 3D — FOSS alternative to Sketchup 3D (Available for Windows, Mac, and Linux).
+ 1. **Blender** — Professional and FOSS alternative to 3D Studio / Maya (Available for Windows, Mac, and Linux).
+ 2. **FreeCad** — FOSS alternative to AutoCad (Available for Windows, Mac, and Linux).
+ 3. **Sweet Home 3D** — FOSS alternative to Sketchup 3D (Available for Windows, Mac, and Linux).
 
 ### UX and Wire-framing
 
-Pencil — The only FOSS alternative to Axure RP (Available for Windows, Mac, and Linux).
-quickMockup — FOSS alternative to Balsamiq / Axure RP / Invision (Available online).
-Balsamiq — Free alternative to Axure RP (Available for Windows, Mac, and it works on Linux via Wine).
-Wireframe — Free alternative to Axure RP (Non Open-Source, Available online).
+ 1. **Pencil** — The only FOSS alternative to Axure RP (Available for Windows, Mac, and Linux).
+ 2. **quickMockup** — FOSS alternative to Balsamiq / Axure RP / Invision (Available online).
+ 3. **Balsamiq** — Free alternative to Axure RP (Available for Windows, Mac, and it works on Linux via Wine).
+ 4. **Wireframe** — Free alternative to Axure RP (Non Open-Source, Available online).
 
 ### Free and Open-Source UI design
 
-Gravit Designer — My favorite alternative to Sketch, although it’s not FOSS (Free and Open-Source) 
-Vectr — a simple yet powerful cross-platform graphics editor to bring your designs into reality, it’s free but not Open-Source
-Alva — It’s Free and Open-Source (FOSS) and works with your production frontend components
-Akira — The only Free and Open-Source (FOSS) Sketch Alternative out there
+ 1. **Gravit Designer** — My favorite alternative to Sketch, although it’s not FOSS (Free and Open-Source) 
+ 2. **Vectr** — a simple yet powerful cross-platform graphics editor to bring your designs into reality, it’s free but not Open-Source
+ 3. **Alva** — It’s Free and Open-Source (FOSS) and works with your production frontend components
+ 4. **Akira** — The only Free and Open-Source (FOSS) Sketch Alternative out there
 
 
 ### More free and Online UI Design Tools
 
-Figma — It’s the best alternative to Sketch, and just like Google Docs,
-Marvel — Marvel is a free design and prototyping tool that transforms static design files (Sketch, Photoshop files, etc) 
-InVision — Great prototyping tool, lets you create interactive wire-frames and also high-fidelity prototypes.
+ 1. **Figma** — It’s the best alternative to Sketch, and just like Google Docs,
+ 2. **Marvel** — Marvel is a free design and prototyping tool that transforms static design files (Sketch, Photoshop files, etc) 
+ 3. **InVision** — Great prototyping tool, lets you create interactive wire-frames and also high-fidelity prototypes.
 
 
 
