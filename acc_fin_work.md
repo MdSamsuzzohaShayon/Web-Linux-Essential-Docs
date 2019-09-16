@@ -21,4 +21,6 @@
 
 # Powerpoint Slide
  
- 1. [Production & Operation Management]()
+ 1. [Production & Operation Management](http://bit.ly/2kAeivO)
+ 2. [NEGATIVE ASPECT  OF COLLABORATION](http://bit.ly/2mhFaRD)
+ 3. []
