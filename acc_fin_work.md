@@ -22,7 +22,17 @@
  - [Result Sheet](http://bit.ly/2lP8xKO)
  - [Bank Management](http://bit.ly/2mePytf)
  - [Sales Management Systems](http://bit.ly/2lUcjCw)
- - []()
+ - [Various cost an sales data for Meriwell Company for the just completed year appear in the work sheet](http://bit.ly/2kBDPop)
+ - [Anwar ltd financial report](http://bit.ly/2mbizWG)
+ - [A report on confidence cement](http://bit.ly/2mgxnDv)
+ - [International Financial Management](http://bit.ly/2lPCVou)
+ - [Real Exchange Rate](http://bit.ly/2kMQgO6)
+ - [Cost of capital](http://bit.ly/2kjmuQR)
+ - [Financial Analysis](http://bit.ly/2kmavlB)
+ - [Comperative Analysis](http://bit.ly/2mkjmF7)
+ - [Databse, Salary Sheet, Sales analysis, Cash mgt](http://bit.ly/2mkjZOZ)
+ - [Mass Meal Management](http://bit.ly/2mki0dp)
+ - [Analysis](http://bit.ly/2mcfMfV)
 
 # Powerpoint Slide
  
@@ -31,3 +41,5 @@
  - [Introduction to UBER](http://bit.ly/2mjdls9)
  - [Just a minute](http://bit.ly/2kLNJni)
  - [Investment](http://bit.ly/2knW9Be)
+ - [Corporate Finance](http://bit.ly/2kjdOd7)
+ - [SWOT](http://bit.ly/2lW5BvM)
