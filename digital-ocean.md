@@ -9,4 +9,5 @@
  - [Create a Droplet](https://www.digitalocean.com/docs/droplets/how-to/create/)
  - [Connect to Droplets with SSH](https://www.digitalocean.com/docs/droplets/how-to/connect-with-ssh/)
  - [Set Up a Node.js Application for Production](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-18-04)
+ - [Nginx setup (Optional)](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04)
  - [Initial Server Setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
