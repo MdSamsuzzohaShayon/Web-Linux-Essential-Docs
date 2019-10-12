@@ -101,6 +101,13 @@ now go to __http://localhost/__
 
 [Documantations](https://docs.phpmyadmin.net/en/latest/)
 
+[Docs from Degitalocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04)
+
+```
+sudo apt update
+sudo apt install phpmyadmin php-mbstring php-gettext
+```
+
 `sudo nano /etc/apache2/apache2.conf`
 
 Add a line in below of this document
