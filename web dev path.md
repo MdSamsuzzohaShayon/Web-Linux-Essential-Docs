@@ -33,11 +33,3 @@
   ![images](img/15.png)
 
   ![images](img/16.png)
-
-  ![images](img/1.png)
-
-  ![images](img/1.png)
-
-  ![images](img/1.png)
-
-  ![images](img/1.png)
