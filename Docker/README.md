@@ -85,7 +85,18 @@ CMD ["redis-server"]
  - Making container with simple command 
 ```
 docker build .
+//OR
+sudo docker build -t shayon/redis:latest .
 docker run CONTAINER_ID
+sudo docker run shayon/redis
 ```
+ - Running same thing in alpine shell(Ctrl + D)
+ ```
+ sudo docker run -it alpine sh
+ ls 
+ pwd
+ apk add --update redis
+ ```
+ - 
 
 
