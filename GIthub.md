@@ -197,6 +197,48 @@ location /api{
  - [Test regular expression ](https://regexr.com/) - **All express route need to start with /api** and push to github 
  - Restart nginx `sudo systemctl restart nginx` 
 
+### Setup server block for multiple websites
+
+ - Copy nginx default file
+   ```
+   cd /etc/nginx/sites-available
+   ls -la
+   sudo cp default somedomain.com
+   sudo nano somedomain.com
+   ```
+ - change servername `server_name _;` to `server_name somedomain.com www.somdomain.com` *point to domain name*
+ - edit from nano editor -> Now create symlink `sudo ln -s /etc/nginx/sites-available/somedomain.com /etc/nginx/sites-enabled/` -> Linking to enable sites
+ - TO check `sudo nginx -t`
+ - Change duplicate default server -> `sudo nano somedomain.com`
+   ```
+   # REMOVE DEFAULT_SERVER
+   listen 80;
+   listen [::]:80;
+   ```
+ - To check `sudo nginx -t` -> if it's is successfull -> `sudo systemctl restart nginx`
+
+### Securing websites
+ - [install certbot](https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-with-nginx-server-blocks-on-ubuntu-16-04) -> Let’s Encrypt is a Certificate Authority (CA) that provides an easy way to obtain and install free TLS/SSL certificates,
+   ```
+   sudo add-apt-repository ppa:certbot/certbot
+   sudo apt-get update
+   sudo apt install python3-certbot-nginx -y
+   ```
+ - Allowing HTTPS Through the Firewall (We did it previously - check once again)
+   ```
+   sudo ufw status
+   # IF IT IS DISABLE - ENABLE ONCE AGAIN
+   sudo ufw allow 'Nginx Full'
+   sudo ufw delete allow 'Nginx HTTP'
+   ```
+ - Now obtain ssl certificate
+   ```
+   sudo certbot --nginx -d somedomain.com -d www.somedomain.com
+   # IT WILL ASK FOR EMAIL ADDRESS ENT THAT 
+   # A FOR AGREE
+   # Choose redirect (2)
+   ```
+ - 
 
 
 
@@ -204,7 +246,7 @@ location /api{
 ### Domain Setup
  - Domain List -> Domain -> Custom DNS -> Add all digital ochan nameserver -> **ns1.digitalocean.com**, **ns2.digitalocean.com**, **ns3.digitalocean.com** 
  - Go to digital ocean control panel -> Create new record -> **A** -> hostname **@** -> will direct to **IP Address** -> Create record
- - 
+ - Go to digital ocean control panel -> Create new record -> **A** -> hostname **www** -> will direct to **IP Address** -> Create record
 
 
 
