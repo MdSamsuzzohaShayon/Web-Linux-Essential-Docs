@@ -9,11 +9,11 @@ It's a cloud service company
  - Create a AWS account that will take credit/debit card number
  - After complete all task launch AWS management console
 
-![Management console](img/management_console.png)
+![Management console](../img/management_console.png)
 
  - Read some solution it will make esier to use
 
-![solution](/img/solution.png)
+![solution](..//img/solution.png)
 
  - go to console -> expand all services -> select anyone -> select region (from where we want to host)
  - to select region take a look at [global infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/?hp=tile&tile=map)
@@ -22,7 +22,7 @@ It's a cloud service company
  - Pricing -> Optimize your cost -> Services Pricing -> See price for what service we are using
  - See on-demand pricing
 
-![pricing](img/pricing.png)
+![pricing](../img/pricing.png)
 
  - Select linux -> see the costs
  - now back to the management console
@@ -30,7 +30,7 @@ It's a cloud service company
  - Add storage -> Add new vloume (don't let it be default)
  - Configure security group -> type ssh with my ip setup
 
-![ip](img/ip.png)
+![ip](../img/ip.png)
 
  - Review and launch -> Create a new key pair -> give any name ->  download it and store it in a save place
  - Launch instances
