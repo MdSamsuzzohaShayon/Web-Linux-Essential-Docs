@@ -1,0 +1,107 @@
+# https://yaml.org/
+#WE CAN USE .YML OR .YAML AS FILE EXTENSION 
+# KEY VALUE PAIRS
+app: user-authentication # WE CAN USE SINGLE QUATE OR DOUBLE QUATE OR WE CAN LEAVE IT AS IT IT IS - IT'S STILL STRING
+port: 9000 # NUMBER DATA TYLE
+version: 1.7 # NUMBER
+deployed: false # We can have boolean values
+server: on # BOOLEAN ALSO CAN BE USE AS ON OR OFF
+
+# CREATING AN OBJECT
+microservice:
+    app: "user-authentication"
+    port: 9000
+    version: 1.7
+    
+# CREATING A LIST OF OBJECT
+listservices:
+    -   app: "user-authentication"
+        port: 9000
+        version: 1.7
+    -   app: "shopping-cart"
+        port: 9002
+        version:
+            -   1.9
+            -   1.8
+            -   1.6
+        system: [linux, ubuntu, debian]
+
+# LIST OF NAME
+listservices:
+    -   app: "user-authentication"
+    -   app: "shopping-cart"
+
+
+# PRACTICAL KUBERNETES YAML
+apiVersion: v1
+kind: Pod
+matadata:
+    name: nginx
+    labels:
+        app: nginx
+    spec:
+        containers:
+            - name: nginx-container
+              image: nginx
+              ports:
+                -containerPort: 80
+                volumeMounts: 
+                - name: nginx-vol
+                  mountPath: /usr/nginx/html
+            - name: sidecar-container
+              image: some-image
+              command: ["/bin/sh"]
+              args: ["-c", "echo hello world from sidecar container; sleep 300"]
+
+# MULTI LINE STRINGS
+multilineString: "This is multi line string \nthis is the next line \nThis is another line"
+multilineString2: |
+    This is multi line string 
+    This is the next line
+    This is another line
+
+# SINGLE LINE STRING
+multilineString2: >
+    This is single line string,
+    This is the same line,
+    This is all in one line
+
+---
+
+# KUBERNETES PRACTICAL EXAMPLE
+apiVersion: v1
+kind: ConfigMap
+matadata:
+#    name: mosquitto-config-file
+    name: {{.Values.service.app}} # USING PLACEHOLDER
+    data:
+        mosquitto.config: |
+            log_dest stdout
+            log_type all
+            log_time-stamp true
+            listener 9001
+
+# ANOTHER PRACTICAL  EXAMPLE FOR RUNNING A SCRIPT
+command:
+    -  sh
+    -  -c
+    -  |
+       #!/usr/bin/env bash -e
+        http (){
+            local path="{$1}"
+            set -- -XGET -s --fail
+            # SOME MORE STUFF HERE
+            curl -k "$@" "http://localhost:5601${path}"
+        }
+        http "/app/kibana"
+
+# ENVIRONMANTAL VARIABLES
+
+
+
+INSIDE ONE YAML FILE CREATE MULTIPLE CONPONENTS AND SEPERATE IT USING ---
+
+
+
+
+#https://codebeautify.org/yaml-validator
