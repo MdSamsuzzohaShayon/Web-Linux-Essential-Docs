@@ -1,0 +1,11 @@
+# WE CAN OVERRIDE ANY VARIABLE FROM HERE 
+version: "3"
+services: 
+    node-app:
+        build: 
+            context: .
+            args: 
+                NODE_ENV: production
+        environment: 
+            - NODE_ENV=production
+        command: node index.js

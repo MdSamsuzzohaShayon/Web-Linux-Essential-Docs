@@ -7,8 +7,14 @@ WORKDIR /app
 # COPY EVERYTHING FROM PAGEKACE JSON 
 COPY package.json .
 
+ARG NODE_ENV
 # INSTALL ALL PACKAGES 
-RUN npm install
+# RUN npm install
+
+RUN if [ "$NODE_ENV" = "development" ]; \
+    then npm install; \
+    else npm install --only=production; \
+    fi
 
 # GRAB EVERY SINGLE FILE AND FOLDER TO CURRENT DIR 
 COPY . ./
@@ -18,8 +24,9 @@ ENV PORT 4000
 EXPOSE $PORT
 
 # The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime. 
-EXPOSE 3000
+# EXPOSE 3000
 
 # RUNNING THE CONTAINER 
-# CMD ["node", "index.js"]
-CMD ["npm", "run", "dev"]
+CMD ["node", "index.js"]
+# CMD ["npm", "run", "dev"]
+

@@ -136,3 +136,34 @@
         sudo docker-compose up --help
         sudo docker-compose up -d --build
     ```
+
+ - Create seperate configuration for development and production
+    ```
+        sudo docker ps
+        # IF ANYTHING RUNNING DELETE EVERYTHING
+        sudo docker-compose down -v
+        # FOR DEVELOPMENT 
+        sudo docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+        sudo docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v
+        # FOR PRODUCTION - WE DON'T HAVE ANY BIND METHOD SO WE CAN'T SEE ANY CHANGE 
+        sudo docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+        # sudo docker-compose -f docker-compose.yml -f docker-compose.prod.yml down -v
+        # EVERYTIME WE CHANGE WE NEED TO REBUILD OUR IMGE TO UPDATE IN PRODUCTION
+        sudo docker-compose -f docker-compose.yml -f docker-compose.prod.yml down -v --build
+        sudo docker exec -it node-docker_node-app_1 bash
+        cd node_modules
+        ls # WE ARE IN PRODUCTION MODE NODEMON SHOULD NOT BE HERE BUT IT IS STILL HERE
+        exit
+    ```
+ - Change context and argument for production and development
+    ```
+        sudo docker-compose -f docker-compose.yml -f docker-compose.prod.yml down -v
+        sudo docker ps
+        sudo docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build
+        sudo docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v
+        sudo docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+        sudo docker exec -it node-docker_node-app_1 bash
+        cd node_modules
+        ls # WE ARE IN PRODUCTION MODE NODEMON SHOULD NOT BE HERE BUT IT IS STILL HERE
+        exit
+    ```

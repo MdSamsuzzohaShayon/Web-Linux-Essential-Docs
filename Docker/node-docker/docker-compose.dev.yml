@@ -1,0 +1,10 @@
+# WE CAN OVERRIDE ANY VARIABLE FROM HERE 
+version: "3"
+services: 
+    node-app:
+        volumes: 
+            - ./:/app
+            - /app/node_modules
+        environment: 
+            - NODE_ENV=development
+        command: npm run dev
