@@ -13,6 +13,10 @@ RUN npm install
 # GRAB EVERY SINGLE FILE AND FOLDER TO CURRENT DIR 
 COPY . ./
 
+# USING ENVIRONMENT VARIABLE IN DOCKER CONTAINER - SETTING DEFAULT PORT
+ENV PORT 4000
+EXPOSE $PORT
+
 # The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime. 
 EXPOSE 3000
 

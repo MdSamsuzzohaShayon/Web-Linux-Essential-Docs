@@ -74,4 +74,65 @@
         sudo docker ps
     ```
  - We will not use bind mount **-v** in production mode
- - 51:00
+ - Use read only file system for our container using **ro** <span style="background: #2F4F4F; color:#F0FFFF;">terminal </span> so that we can't create any file from docker container
+    ```
+        sudo docker rm node-app -f
+        sudo docker run -v $(pwd):/app:ro -v /app/node_modules -p 3000:3000 -d --name node-app node-app-image
+        sudo docker ps
+        sudo docker exec -it node-app bash
+        touch newfile.txt # touch: cannot touch 'newfile.txt': Read-only file system
+        exit
+    ```
+ - Setting environment variable in docker. in <span style="background: #2F4F4F; color:#F0FFFF;">Dockerfile</span>
+    ```
+        ENV PORT 3000
+        EXPOSE $PORT
+    ```
+ - Everytime we change in our dockerfile we need rebuild our image - creating environment variable <span style="background: #2F4F4F; color:#F0FFFF;">terminal</span>
+    ```
+        sudo docker rm node-app -f
+        sudo docker ps
+        sudo docker build -t node-app-image .
+        sudo docker image list
+        # --env NAMEOFTHEENVIRONMENVARIABLE=VALUEOFTHEVARIABLE (--env PORT=4000)
+        sudo docker run -v $(pwd):/app:ro -v /app/node_modules --env PORT=4000 -p 3000:4000 -d --name node-app node-app-image
+        sudo docker exec -it node-app bash
+        printenv
+        exit
+    ```
+ - We can use multiple `--env` but for lots of variable we should use **.env** file so create that file and <span style="background: #2F4F4F; color:#F0FFFF;">terminal</span>
+    ```
+        sudo docker rm node-app -f
+        # --env-file ./.env
+        sudo docker run -v $(pwd):/app:ro -v /app/node_modules --env-file ./.env -p 3000:4000 -d --name node-app node-app-image
+        sudo docker exec -it node-app bash
+        printenv
+        exit
+    ```
+ - List all the volumes and delete the preserver volume which is soring for anonimous volume <span style="background: #2F4F4F; color:#F0FFFF;">terminal</span>
+    ```
+        sudo docker volume ls
+        sudo docker volume rm VOLUME_NAME_28743463726ueeyueyrr
+        sudo docker volume prune
+        EVERYTIME WE DELETE OUR CONTAINER WE SHOULD DELETE THAT VOLUME TOO
+        sudo docker rm node-app -fv
+    ```
+ - Using [docker compose](https://docs.docker.com/compose/) to automate so we don't need to run the docker run everytime manually by command so create **docker-compose.yml** | [version](https://docs.docker.com/compose/compose-file/compose-versioning/) 
+ - [Install docker compose](https://docs.docker.com/compose/install/) and open <span style="background: #2F4F4F; color:#F0FFFF;">terminal</span>
+    ```
+        sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+        sudo chmod +x /usr/local/bin/docker-compose
+        # AFTER INSTALL
+        sudo docker-compose up --help
+        sudo docker-compose up -d
+        sudo docker image ls
+        sudo docker ps
+        sudo docker-compose down -v
+    ```
+
+ - Build images before starting containers
+    ```
+        sudo docker-compose down -v
+        sudo docker-compose up --help
+        sudo docker-compose up -d --build
+    ```
