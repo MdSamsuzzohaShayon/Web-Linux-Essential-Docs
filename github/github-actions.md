@@ -131,3 +131,5 @@ sudo ufw status
 # ALLOW ANYTHING TO NGINX
 sudo ufw allow 5000
 ```
+
+### [Own github action javascript](https://www.youtube.com/watch?v=a9f2CCU_1uY)
