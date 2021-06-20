@@ -15,3 +15,8 @@ less filename.pub
 ```
 ssh root@150.232.121.122
 ```
+
+### SSh Beginner
+ - SSH, also known as Secure Shell or Secure Socket Shell, is a network protocol that gives users, particularly system administrators, a secure way to access a computer over an unsecured network.
+ - There is two program -> **SSH Server** that need to install on the remote machine, there is also ssh client that need to install on local machine
+ - 
