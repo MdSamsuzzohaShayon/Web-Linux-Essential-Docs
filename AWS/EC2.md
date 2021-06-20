@@ -6,13 +6,32 @@
  - At first go to [aws](https://aws.amazon.com/ec2/?nc2=h_ql_prod_fs_ec2&ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) and launch instance AWS EC2
  - Select Ubuntu server -> Preview and launch -> Launch -> **Create a new key pair** -> name anything -> download it -> view instance
  - Check instance -> copy **public ip** from down (it may closed)
+#### Connect EC2 via terminal
  - Use linux terminal, putty (Windows), git bash (windows) and change directory where key pair is downloaded
     ```
     # BY DEFAULT DOWNLOADS FOLDER
     cd Downloads
     # 3.121.126.96 IS THE PUBLIC IP WE COPIED
+    # THIS UBUNTU COULD BE SOME USERNAME OR ROOT AS USER
     ssh -i keyname.pem ubuntu@3.121.126.96
     # NOW WE ARE ON UBUNTU TERMINAL
+    ```
+ - If we want to connect via some user [create user](https://github.com/MdSamsuzzohaShayon/Web-Linux-Essential-Docs/blob/5_linux_for_beginner/new-user.md)
+    ```
+    #  AT FIRST WE NEED TO CONNECT TO SERVER VIA PEM KEY 
+    sudo su
+    # CONFIGURE SSH IF IT ISN'T CONFIGURE
+    nano /etc/ssh/sshd_config
+    # FROM THIS FILE COMMENT PASSWORDAUTHENTICATION NO AND UNCOMMENT PASSWORDAUTHENTICATION YES
+    # PasswordAuthentication no
+    PasswordAuthentication yes
+    # NOW RESTART SSH DEMON
+    service sshd restart
+    # NOW CREATE A USER AND SET PASSWORD FOR THAT USER
+    exit
+    exit
+    # EXIT FROM SERVER AND CONNECT USER FROM LOCAL MACHINE
+    ssh ec2-username@ip-or-host-or-dnsname
     ```
  - From ubuntu terminal -> clone repo, for private repo use ssh url from github -> search for [generate ssh key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     ```
