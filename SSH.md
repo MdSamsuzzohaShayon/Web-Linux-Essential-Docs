@@ -1,4 +1,4 @@
-# SSH [setup](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2)
+# SSH [setup](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2) - [centos with ssh](https://www.youtube.com/watch?v=kH4A43AYOQg&list=PLTGb7Fhy-jx_z9CMD8Vb0uVXYjlWXJirn&index=24)
  - During creating instance or droplet we have additional options that is **IPv6, user data, monitoring** (we can uncheck them)
  - From terminal generate a ssh key
 ```
