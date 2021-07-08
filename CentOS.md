@@ -37,7 +37,7 @@
  - Change to root `su` check group of particular user `groups username` and check for root `groups` 
  - Exit from root `exit` 
  - See all groups that are available `cat /etc/group` - there are system group which created by default for defferent sofware
- - `groupname:x:1001` here 1001 is the group id
+ - in text editor `groupname:x:1001` here 1001 is the group id
  - Make a group with specific group id `sudo groupadd -g 2099 heroes` and check `cat /etc/group`
  - Add a user to the group `sudo usermod -aG groupname username` we can't see the effect now `groups` 
  - Navigate to root `su` and check `groups username` here we can see groups for the particular user
@@ -61,6 +61,14 @@
         %admin ALL=(ALL) /usr/bin/ls
     ```
  - Know the full path of a commands `which ls`. depending on shell environment certain directories may or may not be understood as having binary command in them run commands on the linux terminal there are certain directories that are automatically searched for which is why we are able to run ls
+
+### Managing Users
+ - List all the users `cat /etc/passwd` and list the group `cat /etc/group`
+ - Add user with simple commands `sudo adduser username`
+ - List all the users `cat /etc/passwd` and groups `cat /etc/group`
+ - add new user to the sudoer group `sudo usermod -aG wheel username` and custom made group `sudo usermod -aG groupname username`
+ - Check group for a user `groups username` 
+ - Set password for the user `sudo passwd username` and switch to the user `su - username`
 
  
 
